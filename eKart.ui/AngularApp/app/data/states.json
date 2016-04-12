@@ -1,0 +1,18 @@
+{"states":[
+    {
+        "name": "New York",
+        "code": "NY",
+        "countryCode": "US"
+                        },
+    {
+        "name": "Telangana",
+        "code": "TG",
+        "countryCode": "IN"
+                        },
+    {
+        "name": "New Jersy",
+        "code": "NJ",
+        "countryCode": "US"
+                        }
+]
+}

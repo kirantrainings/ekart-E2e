@@ -1,0 +1,17 @@
+﻿<div ng-controller="salesCtrl">
+
+    <table class="table table-responsive">
+        <tr>
+            <th>S.No</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th><div class="col-xs-2">
+                 <input type="text" ng-model="search" class="form-control" /></div></th>
+        </tr>
+        <tr ng-repeat="item in salesInfo|filter:{Model:search}">
+            <th>{{item.GadgetId}}</th>
+            <th>{{item.Model|uppercase}}</th>
+            <th>{{item.Price|currency:"$"}}</th>
+        </tr>
+    </table>
+</div>
