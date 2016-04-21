@@ -1,0 +1,25 @@
+﻿<div class="col-xs-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Products</div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <tr>
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                </tr>
+                <tr ng-repeat="item in cart">
+                    <td>{{item.GadgetId}}</td>
+                    <td>{{item.Model|uppercase}}</td>
+                    <td>{{item.Price|currency:"$"}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-info">Total</td>
+                    <td>{{total|currency:"$"}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

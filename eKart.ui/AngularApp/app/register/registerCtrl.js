@@ -16,7 +16,7 @@
                             address: "",
                             gender: "",
                             age: "",
-                            email: "",
+                            email: "kiran",
                             phoneNumber: "1234567890",
                             address: {
                                 country: "",
@@ -50,8 +50,6 @@
 
                     $scope.countryChanged = function () {
                         $scope.states = [];
-
-
                         angular.forEach($scope.statesFromJson, function (item) {
                             if (item.countryCode == $scope.selectedCountry.code) {
                                 $scope.states.push(item);

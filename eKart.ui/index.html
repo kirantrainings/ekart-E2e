@@ -5,23 +5,39 @@
     <link rel="stylesheet" href="../AngularApp/content/css/bootstrap.min.css">
     <link rel="stylesheet" href="../AngularApp/content/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="../AngularApp/vendor/jquery-2.2.0.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   
+     <script src="../AngularApp/vendor/jquery-2.2.0.js"></script>
+   
+     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="../AngularApp/vendor/bootstrap.js"></script>
     <script src="../AngularApp/vendor/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 </head>
 <body>
     <div class="container" ng-controller="mainCtrl">
-        <div ng-include="navUrl"></div>
-
-        <div ng-include="contentUrl"></div>
+        <!--<div ng-include="navUrl"></div>-->'
+        <div ekart-nav-bar></div>
+         <!--step 5 include the ui-view-->
+        <div ui-view></div>
+        <!--ekartLogo represented in the ui as ekart-logo-->
+        <!-- Replaced this with the ui-view 
+            <div ng-include="contentUrl"></div>-->
     </div>
     <script src="../AngularApp/app/common/common.js"></script>
     <script src="../AngularApp/app/common/ekartDatePicker.js"></script>
     <script src="../AngularApp/app/common/countriesFactory.js"></script>
     <script src="../AngularApp/app/common/statesFactory.js"></script>
     <script src="AngularApp/app/common/phoneFormatFilter.js"></script>
+    <script src="AngularApp/app/common/navbar/navBar.js"></script>
+    <script src="AngularApp/app/common/ekartLogo.js"></script>
+    <script src="AngularApp/app/common/domManipulation/ekartClick.js"></script>
+    <script src="AngularApp/app/common/domManipulation/ekartAlphabetsOnly.js"></script>
+    <script src="AngularApp/app/common/domManipulation/ekartNumbersOnly.js"></script>
+    <script src="AngularApp/app/common/emailValidator.js"></script>
+
     <script src="../AngularApp/app/cart/cart.js"></script>
+    <script src="AngularApp/app/cart/cartCtrl.js"></script>
     <script src="../AngularApp/app/login/login.js"></script>
     <!--navigation-->
     <script src="../AngularApp/app/navigation/navigation.js"></script>

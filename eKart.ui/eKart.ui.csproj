@@ -251,9 +251,18 @@
   <ItemGroup>
     <Content Include="AngularApp\app\app.js" />
     <Content Include="AngularApp\app\cart\cart.js" />
+    <Content Include="AngularApp\app\cart\cart.tpl.html" />
+    <Content Include="AngularApp\app\cart\cartCtrl.js" />
     <Content Include="AngularApp\app\common\common.js" />
     <Content Include="AngularApp\app\common\countriesFactory.js" />
+    <Content Include="AngularApp\app\common\domManipulation\ekartAlphabetsOnly.js" />
+    <Content Include="AngularApp\app\common\domManipulation\ekartClick.js" />
+    <Content Include="AngularApp\app\common\domManipulation\ekartNumbersOnly.js" />
     <Content Include="AngularApp\app\common\ekartDatePicker.js" />
+    <Content Include="AngularApp\app\common\ekartLogo.js" />
+    <Content Include="AngularApp\app\common\emailValidator.js" />
+    <Content Include="AngularApp\app\common\navbar\navBar.js" />
+    <Content Include="AngularApp\app\common\navbar\navbar.tpl.html" />
     <Content Include="AngularApp\app\common\phoneFormatFilter.js" />
     <Content Include="AngularApp\app\common\statesFactory.js" />
     <Content Include="AngularApp\app\login\login.js" />
@@ -261,7 +270,6 @@
     <Content Include="AngularApp\app\main\mainCtrl.js" />
     <Content Include="AngularApp\app\navigation\navCtrl.js" />
     <Content Include="AngularApp\app\navigation\navigation.js" />
-    <Content Include="AngularApp\app\navigation\navigation.tpl.html" />
     <Content Include="AngularApp\app\register\register.js" />
     <Content Include="AngularApp\app\register\register.tpl.html" />
     <Content Include="AngularApp\app\register\registerCtrl.js" />
@@ -278,6 +286,8 @@
     <Content Include="AngularApp\vendor\angular.min.js" />
     <Content Include="AngularApp\vendor\bootstrap.js" />
     <Content Include="AngularApp\vendor\jquery-2.2.0.js" />
+    <Content Include="gadgets.html" />
+    <Content Include="images\logo.jpg" />
     <Content Include="index.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
@@ -286,6 +296,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="jqueryApp\app.js" />
+    <Content Include="jqueryApp\gadgets.js" />
     <Content Include="jqueryHtml.html" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />

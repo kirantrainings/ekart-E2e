@@ -2,13 +2,20 @@
   function () {
       'use strict';
       angular.module("eKart.common")
-      .directive('eKartDatePicker', [function () {
-          var directiveObj = {};
-          directiveObj.restrict = 'A';
-          directiveObj.link = function (scope, element, attrs) {
-              $(element).datepicker();
-          };
-          return directiveObj;
+      .directive('ekartDatePicker', [function () {
+          return {
+              restrict: "A",
+              link: function (scope, element, attrs) {
+                  var config = {};
+                  if (attrs["mindate"]) {
+                      config.minDate = attrs["mindate"];
+                  }
+                  if (attrs["maxdate"]) {
+                      config.maxDate = attrs["maxdate"];
+                  }
+                  $(element).datepicker(config);
+              }
+          }
       }]);
   }
 )();

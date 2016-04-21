@@ -14,9 +14,7 @@
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="active" ng-click="loadContent('home')"><a href="#">Home</a></li>
-            <li class="active" ng-click="loadContent('sales')"><a href="#">Sales</a></li>
-            <li><a href="#">Profile</a></li>
-           
+            <li class="active" ><a ui-sref="sales">Sales</a></li>
         </ul>
         <form role="search" class="navbar-form navbar-left">
             <div class="form-group">
@@ -24,8 +22,9 @@
             </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li ng-click="loadContent('register')"><a href="#">Register</a></li>
-            <li ng-click="loadContent('login')"><a href="#">Login</a></li>
+            <li> <a href="#">Shopping Basket {{products.length}}</a></li>
+            <li><a href="register" ui-sref="register">Register</a></li>
+            <li><a href="login" ui-sref="login">Login</a></li>
         </ul>
     </div>
 </nav>
