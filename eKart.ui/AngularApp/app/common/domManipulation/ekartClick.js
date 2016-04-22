@@ -9,6 +9,10 @@
                  console.log(scope);
                  console.log(element);
                  console.log(attrs);
+                 $(element).bind('click', function () {
+                     scope.changedClass = "btn-danger";
+                     scope.$apply();
+                 })
              }
          }
      }]);
