@@ -17,7 +17,19 @@
         </tr>
     </table>
     <button ng-click="checkout()" class="btn btn-primary">CheckOut</button>
-    <h1>{{filterData}}</h1>
-    <button ng-click="handleData()" class="btn btn-primary">Click me</button>
-    <button ekart-click class="btn btn-primary" ng-class="changedClass">change color</button>
 </div>
+
+
+<h1>Product Description in main page</h1>
+<h1>{{productName}}</h1>
+<div class="row">
+    <div class="col-xs-3">
+        <input type="text" ng-model="productInfo.name" placeholder="name" />
+    </div>
+    <div class="col-xs-3">
+        <input type="text" ng-model="productInfo.price" placeholder="Price" />
+    </div>
+</div>
+<div ekart-product-details 
+     product-details="productInfo"
+     name-of-the-product="{{productName}}"></div>

@@ -260,10 +260,13 @@
     <Content Include="AngularApp\app\common\domManipulation\ekartNumbersOnly.js" />
     <Content Include="AngularApp\app\common\ekartDatePicker.js" />
     <Content Include="AngularApp\app\common\ekartLogo.js" />
+    <Content Include="AngularApp\app\common\ekartTranscludeDemo.js" />
     <Content Include="AngularApp\app\common\emailValidator.js" />
     <Content Include="AngularApp\app\common\navbar\navBar.js" />
     <Content Include="AngularApp\app\common\navbar\navbar.tpl.html" />
     <Content Include="AngularApp\app\common\phoneFormatFilter.js" />
+    <Content Include="AngularApp\app\common\productDetails\product.tpl.html" />
+    <Content Include="AngularApp\app\common\productDetails\productDetails.js" />
     <Content Include="AngularApp\app\common\statesFactory.js" />
     <Content Include="AngularApp\app\login\login.js" />
     <Content Include="AngularApp\app\login\login.tpl.html" />

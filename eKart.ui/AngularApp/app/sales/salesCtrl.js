@@ -6,9 +6,9 @@
                                          function init() {
                                              $scope.filterData = "";
                                              salesFact.getAllGadgets().then(function (response) {
-                                                 $scope.salesInfo = response.data;
+                                                 $scope.salesInfo = response;
                                              }).catch(function (errorResponse) {
-                                                 console.log(error);
+                                                 console.log(errorResponse);
                                              });
                                          }
 
@@ -40,6 +40,13 @@
                                                  $scope.$apply();
                                              },5000)
                                          };
+
+                                         $scope.productName = "Samsung Note 6";
+                                         $scope.productInfo = {
+                                             name: "Galaxys6",
+                                             price: "40000"
+                                         };
+
                                      }]);
     }
 )
