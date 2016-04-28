@@ -2,7 +2,8 @@
    function () {
        'use strict';
        angular.module('eKart')
-              .controller('mainCtrl', ["$scope", function ($scope) {
+              .controller('mainCtrl', ["$scope", 'authenticateSvc',
+                  function ($scope, authenticateSvc) {
                   $scope.content = "I am the content";
                   $scope.brandName = "e-Kart";
 
@@ -15,6 +16,7 @@
                       var index = _.indexOf($scope.products, args.product)
                       $scope.products.splice(index,1);
                   });
+                  
               }]);
    }
 )();

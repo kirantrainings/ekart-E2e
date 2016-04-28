@@ -235,6 +235,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -253,6 +254,7 @@
     <Content Include="AngularApp\app\cart\cart.js" />
     <Content Include="AngularApp\app\cart\cart.tpl.html" />
     <Content Include="AngularApp\app\cart\cartCtrl.js" />
+    <Content Include="AngularApp\app\common\authenticateSvc.js" />
     <Content Include="AngularApp\app\common\common.js" />
     <Content Include="AngularApp\app\common\countriesFactory.js" />
     <Content Include="AngularApp\app\common\domManipulation\ekartAlphabetsOnly.js" />
@@ -270,6 +272,8 @@
     <Content Include="AngularApp\app\common\statesFactory.js" />
     <Content Include="AngularApp\app\login\login.js" />
     <Content Include="AngularApp\app\login\login.tpl.html" />
+    <Content Include="AngularApp\app\login\loginCtrl.js" />
+    <Content Include="AngularApp\app\login\loginFact.js" />
     <Content Include="AngularApp\app\main\mainCtrl.js" />
     <Content Include="AngularApp\app\navigation\navCtrl.js" />
     <Content Include="AngularApp\app\navigation\navigation.js" />

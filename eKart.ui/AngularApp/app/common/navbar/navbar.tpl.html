@@ -24,7 +24,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <li> <a href="#">Shopping Basket {{products.length}}</a></li>
                 <li><a href="register" ui-sref="register">Register</a></li>
-                <li><a href="login" ui-sref="login">Login</a></li>
+                <li ng-if="!userDetails.isAuthenticated" ><a href="login" ui-sref="login">Login</a></ling-if="userDetails.isAuthenticated">
+                <li ng-if="userDetails.isAuthenticated"><a>{{userDetails.FirstName}} {{userDetails.lastName}}</a></li>
+                <li ng-if="userDetails.isAuthenticated"><a hr">Logout</a></li>
             </ul>
         </div>
     </nav>

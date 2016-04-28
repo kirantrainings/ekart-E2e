@@ -17,6 +17,7 @@ function ($urlRouterProvider, $stateProvider) {
     var login = {
         name: "login",
         url: "/",
+        controller:"loginCtrl",
         templateUrl: "AngularApp/app/login/login.tpl.html"
     };
     var register = {
@@ -46,4 +47,30 @@ function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise("/")
     
 }]);
+
+
+angular.module('eKart')
+.run(['authenticateSvc', '$rootScope', '$state',
+    function (authenticateSvc, $rootScope,$state) {
+    
+        $rootScope.$on('$stateChangeSuccess',
+            function (event, toState, toParams, fromState, fromParams, options) {
+              //  console.log(authenticateSvc.getUserDetails().isAuthenticated);
+                console.log("route changed from");
+                console.log(fromState);
+
+                console.log("route Changed To");
+                console.log(toState);
+                var isAuthenticated=authenticateSvc.getUserDetails().isAuthenticated;
+                if (toState.name != 'login' && isAuthenticated) {
+
+                }
+                else {
+                    $state.go('login');
+                }
+            })
+
+    }]);
+
+
 
